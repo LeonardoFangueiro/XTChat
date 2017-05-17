@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xtchat.MainScreenController">
+   <children>
+      <TextField fx:id="fieldIP" layoutX="27.0" layoutY="12.0" promptText="ex : 127.0.0.1" />
+      <Label layoutX="11.0" layoutY="17.0" text="IP" />
+      <Label layoutX="205.0" layoutY="17.0" text="PORT" />
+      <TextField fx:id="fieldPORT" layoutX="245.0" layoutY="12.0" promptText="ex : 6666" />
+      <Button fx:id="connectButton" layoutX="417.0" layoutY="12.0" mnemonicParsing="false" onAction="#connectButtonAction" prefHeight="25.0" prefWidth="81.0" text="Connect" />
+      <TextArea editable="false"  wrapText="true"  fx:id="areaChat" layoutX="13.0" layoutY="66.0" prefHeight="284.0" prefWidth="449.0" />
+      <TextArea editable="false" wrapText="true"  fx:id="areaUsers" layoutX="476.0" layoutY="67.0" prefHeight="284.0" prefWidth="114.0" />
+      <TextField editable="true"  fx:id="areaChatSend" layoutX="13.0" layoutY="363.0" prefHeight="40.0" prefWidth="449.0" />
+      <Button fx:id="enviarButton" layoutX="476.0" layoutY="363.0" mnemonicParsing="false" onAction="#enviarButtonAction" prefHeight="40.0" prefWidth="114.0" text="Enviar" />
+      <Label layoutX="5.0" layoutY="404.0" text="created by Leonardo Fangueiro" />
+      <Button fx:id="disconnectButton" layoutX="501.0" layoutY="12.0" mnemonicParsing="false" onAction="#disconnectButtonAction" prefHeight="25.0" prefWidth="93.0" text="Disconnect" />
+   </children>
+</AnchorPane>
